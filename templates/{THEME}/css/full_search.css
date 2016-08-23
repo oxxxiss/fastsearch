@@ -1,0 +1,113 @@
+/*================================================
+ // Поиск на весь экран для Dle от oxxxiss
+ //-----------------------------------------------
+ // Автор: oxxxiss
+ //-----------------------------------------------
+ // Почта: oxxxiss69@mail.ru
+ //-----------------------------------------------
+ // skype: oxxxiss69
+ //-----------------------------------------------
+ // Назначение: Стилы модуля
+//================================================*/
+	ul {
+		padding-left: 25px;
+		list-style: disc outside;
+		list-style: none;
+	}
+	.search-to-window{
+		background-color: black;
+		position: fixed;
+		z-index: 99999;
+		width: 100%;
+		height: 100%;
+		opacity: 0.9;
+	}
+	#search-to-window-button-exit:before {
+		content: '\00D7';
+		font: bold 1em/1 arial;
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		padding: 8px 8px 12px 12px;
+		font-size: 2em;
+		opacity: .8;
+		vertical-align: middle;
+		background: rgba(255,255,255,.2);
+		border-radius: 0 0 0 70px;
+		transition: .1s ease-out;
+	}
+	#search-to-window-button-exit:hover:before{ padding:15px 10px 24px 24px; background:rgba(255,100,100,.4); }
+	#search-to-window-button-exit{
+	  top: -2px;
+		right: -2px;
+		position: absolute;
+		z-index: 999;
+		display: block;
+		padding: 0 0 20px 20px;
+		text-align: center;
+		cursor: pointer;
+		color: #FFF;
+		transition: .3s .3s ease-out;
+	}
+	.search-to-window{
+	  opacity: 0;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: 9999;
+		left: 0;
+		top: 0;
+		text-align: center;
+		pointer-events: none;
+		-moz-user-select: none;
+		background: rgba(0,0,0,.90);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2000000', endColorstr='#e2000000');
+			-webkit-transform: translate3d(0);
+		transition: opacity 300ms ease;
+	}
+	.search-to-window-polya{margin-top: 90px;}
+	.result-2{
+	  background-color: rgba(195, 194, 194, 0.39);
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		text-align: -webkit-left;
+		color: white;
+		padding: 8px 15px;
+		display: -webkit-inline-box;
+	}
+	.result-2 a{color: white;}
+	.result-2 img{width: 200px;     border: 3px solid;}
+	.title-result-2{	    
+		display: -webkit-inline-box;
+		display: inline-table;
+		background-color: rgba(181, 181, 181, 0.68);
+		padding: 5px 10px;
+		transition: 0.2s;
+	}
+	.title-result-2:hover{ background-color: rgba(181, 181, 181, 0.84); transition: 0.2s;}
+	.description-result-2{ display: -webkit-inline-box;margin-right: 200px;text-align: justify; margin-top: 2px;}
+	.search-to-window-result{
+		width: 82%;
+		margin-left: auto;
+		margin-right: auto;
+		overflow-x: auto;
+		height: 840px;
+		margin-top: 12px;
+	}
+	.poisk-icon{
+		fill: white;
+		margin-right: 17px;
+	}
+	@media screen and (max-width: 1500px) and (min-width:800px){
+		
+		.result-2 img{width: 180px;}
+		
+	}
+	@media screen and (max-width: 799px) {
+		
+		.result-2 img{width: 140px;}
+		
+	}
